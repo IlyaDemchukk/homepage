@@ -31,10 +31,10 @@ body {
 
 .resume {
     margin: 50px auto;
-    padding: 20px 30px;
+    padding: 40px;
     max-width: 900px;
     background-color: var(--block-color);
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .resume__title {
@@ -42,9 +42,7 @@ body {
     font-weight: 700;
     color: var(--primary-text-color);
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--primary);
-    text-decoration-thickness: 2px;
+    text-decoration: underline var(--primary) 2px;
 }
 
 .resume__job {
@@ -61,6 +59,7 @@ body {
     margin-top: 50px;
     min-height: 200px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .resume__photo {
@@ -82,4 +81,66 @@ body {
 
 .media i {
     margin-right: 8px;
+}
+
+.resume__subtitle {
+    font-size: 24px;
+    text-decoration: underline var(--primary) 1px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.skills__list {
+    margin-top: 12px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    justify-content: center;
+}
+
+.skills__item:not(:first-child)::marker {
+    content: ",  ";
+}
+
+.resume__studies {
+    margin-top: 30px;
+}
+
+.studies__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.study {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 300px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.study:hover {
+    background-color: var(--background-color);
+    cursor: default;
+}
+
+.study__name {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.study__description {
+    color: var(--secondary-text-color);
+}
+
+.study__languages {
+    margin-top: 16px;
+    list-style: circle;
+    padding-left: 16px;
+    color: var(--secondary-text-color);
 }
